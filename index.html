@@ -6,7 +6,7 @@
   <title>Portfolio - Rion Asari</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body onload="showMessage()">
   <header>
     <h1>Muhammad Rion Asari</h1>
     <p>Back-End Developer | Game Developer | UI/UX Enthusiast</p>
@@ -21,18 +21,17 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="section" id="about">
-  <h2>About Me</h2>
-  <p>
-    Saya adalah seorang kreator serba bisa yang suka mengeksplorasi berbagai bidang di dunia digital. 
-    Fokus utama saya ada pada <strong>desain visual</strong> dan <strong>editing video</strong> untuk menciptakan konten yang menarik dan berkualitas. 
-    Selain itu, saya juga tertarik dengan <strong>front-end development</strong> dan senang membangun tampilan website atau aplikasi 
-    yang interaktif dan user-friendly. Saya fleksibel, cepat belajar, dan siap beradaptasi dengan berbagai tantangan baru.
-  </p>
-</div>
+  <div class="section fade-in" id="about">
+    <h2>About Me</h2>
+    <p>
+      Saya adalah seorang kreator serba bisa yang suka mengeksplorasi berbagai bidang di dunia digital. 
+      Fokus utama saya ada pada <strong>desain visual</strong> dan <strong>editing video</strong> untuk menciptakan konten yang menarik dan berkualitas. 
+      Selain itu, saya juga tertarik dengan <strong>front-end development</strong> dan senang membangun tampilan website atau aplikasi 
+      yang interaktif dan user-friendly. Saya fleksibel, cepat belajar, dan siap beradaptasi dengan berbagai tantangan baru.
+    </p>
+  </div>
 
-
-  <div class="section" id="education">
+  <div class="section fade-in" id="education">
     <h2>Education</h2>
     <ul>
       <li><strong>SMK Negeri 1 Prigen</strong> – Multimedia (2018 – 2021)</li>
@@ -40,32 +39,55 @@
     </ul>
   </div>
 
-  <div class="section" id="experience">
+  <div class="section fade-in" id="experience">
     <h2>Experience</h2>
-    <div class="job">
+    <div class="project">
       <h3>Magang - Era Print Advertising (Jul 2019 – Des 2019)</h3>
       <p>Mengelola printer, memproduksi banner, mendesain poster, dan mengkoordinasi anggota magang.</p>
     </div>
-    <div class="job">
+    <div class="project">
       <h3>Magang - PT Adira Finance (Nov 2024 – Des 2024)</h3>
       <p>Membangun aplikasi & web reseller berbasis Flutter + Firebase, sudah di-deploy ke Play Store.</p>
     </div>
-    <div class="job">
+    <div class="project">
       <h3>Program MSIB - Infinite Learning (Nov 2024 – Des 2024)</h3>
       <p>Mengembangkan game platformer 2D shooting side-scrolling.</p>
     </div>
   </div>
 
-  <div class="section" id="projects">
+  <div class="section fade-in" id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/RionAsari/ResellerApp" target="_blank">Reseller App</a> – Flutter + Firebase</li>
-      <li><a href="https://github.com/RionAsari/Alira-the-Protector-of-Malaka" target="_blank">Alira: The Protector of Malaka</a> – Game 2D Platformer</li>
-      <li><a href="https://github.com/RionAsari/tugaslaravel" target="_blank">Laravel CRUD</a> – CRUD Web App</li>
-    </ul>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>🎨 Design</h3>
+        <ul>
+          <li>UI/UX Website & Mobile Design (Figma)</li>
+          <li>Poster & Banner Production</li>
+          <li>Logo & Brand Identity Design</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>💻 Coding</h3>
+        <ul>
+          <li><a href="https://github.com/RionAsari/ResellerApp" target="_blank">Reseller App</a> – Flutter + Firebase</li>
+          <li><a href="https://github.com/RionAsari/Alira-the-Protector-of-Malaka" target="_blank">Alira: The Protector of Malaka</a> – Game 2D Platformer</li>
+          <li><a href="https://github.com/RionAsari/tugaslaravel" target="_blank">Laravel CRUD</a> – CRUD Web App</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>🎬 Video Editing</h3>
+        <p>Berbagai karya editing saya bisa kamu lihat di sini:</p>
+        <a class="cta-button" href="https://drive.google.com/drive/folders/1_rj-r6wXaZX9L3B4HOiScFu2PFxt_Pva?usp=sharing" target="_blank">
+          📁 Lihat Koleksi Video Editing
+        </a>
+      </div>
+    </div>
   </div>
 
-  <div class="section" id="skills">
+  <div class="section fade-in" id="skills">
     <h2>Skills</h2>
     <p><strong>Languages:</strong> JavaScript (Dasar), C#, Kotlin, Python, Dart</p>
     <p><strong>Frameworks:</strong> Laravel, Flutter</p>
@@ -73,7 +95,7 @@
     <p><strong>Other:</strong> After Effect, Adobe Premiere, Photoshop, UI/UX Website Design</p>
   </div>
 
-  <div class="section" id="contact">
+  <div class="section fade-in" id="contact">
     <h2>Contact</h2>
     <p>📧 Email: <a href="mailto:rionasari157@gmail.com">rionasari157@gmail.com</a></p>
     <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/rion-asari-2908482a3" target="_blank">linkedin.com/in/rion-asari</a></p>
@@ -83,5 +105,7 @@
   <footer>
     <p>&copy; 2025 Muhammad Rion Asari. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
